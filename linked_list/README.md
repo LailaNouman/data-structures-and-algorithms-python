@@ -6,9 +6,19 @@ A singly linked list can be traversed in only one direction from head to the las
 
 Create a linked list class and include a head property and the class has methods like (insert, includes, toString) 
 
+## Challenge 2:
+
+append: adds a new node with the given value to the end of the list
+insert before: adds a new node with the given new value immediately before the first node that has the value specified
+insert after: adds a new node with the given new value immediately after the first node that has the value specified
+
+## Whiteboard
+
+
 ## Approach & Efficiency
 
-The Big O Notation is O(1)
+append: Big O(N) | insert before: Big O(N) | insert after: Big O(N)
+
 
 ## API
 
