@@ -13,29 +13,39 @@ class LinkedList:
         node.next = self.head
         self.head = node
 
-    # def append(self, value):
-    #     node = Node(value)
-    #     current_v = self.head
-    #     while True:
-    #         if current_v.next == None:
-    #             current_v.next = node
-    #             break
-    #         current_v = current_v.next
+    def append(self, value):
+        newNode = Node(value)
+        current_v = self.head
+        while True:
+            if current_v.next == None:
+                current_v.next = newNode
+                break
+            current_v = current_v.next
 
-    # def insert_after(self, index, value):
-    #     self.index = index
-    #     self.value = value
-    #     node = Node(value)
-    #     current = self.head
-    #
-    #     if index < 1:
-    #         pass
-    #     else:
-    #         for i in range(1, index):
-    #             current = current.next
-    #         node.nextNode = current.next
-    #         current.next = node
+    def insert_after(self, index, value):
+        self.index = index
+        self.value = value
+        newNode = Node(value)
+        current = self.head
+        if index > 1:
+            for i in range(1, index):
+                current = current.next
+            newNode.next = current.next
+            current.next = newNode
 
+    def insert_before(self, index, value):
+        self.index = index
+        self.value = value
+        node = Node(value)
+        current = self.head
+        if index == 1:
+            node.next = current
+            self.head = node
+        else:
+            for i in range(1, index - 1):
+                current = current.next
+            node.next = current.next
+            current.next = node
 
     def toString(self):
         current_v = self.head
@@ -66,7 +76,9 @@ if __name__ == '__main__':
     ll.insert(2)
     ll.insert(3)
     ll.insert(4)
-    # ll.append(6)
-    # ll.insert_after(2, 5)
+    ll.append(6)
+    ll.append(3)
+    ll.insert_after(2,4)
+    ll.insert_before(2,4)
     str(ll.toString())
     print(ll.head.value)
