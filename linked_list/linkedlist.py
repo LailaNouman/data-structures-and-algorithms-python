@@ -70,13 +70,30 @@ class LinkedList:
         else:
             return True
 
+    def kth_from_end(self, k):
+        current_v = self.head
+        length = 0
+        while current_v.next:
+            length += 1
+            current_v = current_v.next
+        if k > length:
+            return "Value not found"
+        if k < 0:
+            return "Negative index"
+        current_v = self.head
+        while length != k:
+            length -= 1
+            current_v = current_v.next
+        return current_v.value
+
 if __name__ == '__main__':
     ll = LinkedList()
     ll.insert(1)
     ll.insert(2)
     ll.insert(3)
-    ll.append(6)
+    ll.insert(4)
+    # ll.append(6)
     # ll.insert_after(2,4)
     # ll.insert_before(2,4)
-    str(ll.toString())
-    print(ll.head.value)
+    # ll.toString()
+    print(ll.kth_from_end(0))

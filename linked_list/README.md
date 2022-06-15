@@ -12,9 +12,20 @@ append: adds a new node with the given value to the end of the list
 insert before: adds a new node with the given new value immediately before the first node that has the value specified
 insert after: adds a new node with the given new value immediately after the first node that has the value specified
 
+## Challenge 3:
+
+kth_from_end: a method inside the LinkedList class which takes a number as a parameter (k) 
+and returns the value of this index from the tail. 
+
 ## Whiteboard
 
-![linkedlist](Untitled%20(2).jpg)
+**Append**
+![append](Untitled%20(2).jpg)
+
+**Kth_from_end**
+![kth](kth.jpg)
+
+
 
 
 ## Approach & Efficiency
@@ -26,11 +37,13 @@ Time complexity:
 - append: Big O(N) 
 - insert before: Big O(N)  
 - insert after: Big O(N)
+- kth from end: Big O(N)
 
 I created two classes first class called Node and the second class called LinkedList the Node class creates 
 a node that points to null. The LinkedList class has 6 methods each one of them doing a different thing to
 the list so the insert method inserts a value inside the list, the append method adds a value to the end of
-the list, the insert after method inserts a value after a specific element.
+the list, the insert after method inserts a value after a specific element, the kth from end method which returns
+the node value from the tail of the linked-list.
 
 ## API
 
@@ -40,3 +53,4 @@ the list, the insert after method inserts a value after a specific element.
 - Append: add to the last.
 - Insert_before: to add an element before a specific element.
 - Insert_after: to add an element after a specific element.
+- Kth: to find the value of the number you gave the method but from the tail.
