@@ -14,21 +14,21 @@ class LinkedList:
         self.head = node
 
     def append(self, value):
-        node = Node(value)
-        if self.head == None:
-            self.head = node
-        else:
-            current_v = self.head
-            while current_v.next:
-                current_v = current_v.next
-            current_v.next = node
-        # newNode = Node(value)
-        # current_v = self.head
-        # while True:
-        #     if current_v.next == None:
-        #         current_v.next = newNode
-        #         break
-        #     current_v = current_v.next
+        # node = Node(value)
+        # if self.head == None:
+        #     self.head = node
+        # else:
+        #     current_v = self.head
+        #     while current_v.next:
+        #         current_v = current_v.next
+        #     current_v.next = node
+        newNode = Node(value)
+        current_v = self.head
+        while True:
+            if current_v.next == None:
+                current_v.next = newNode
+                break
+            current_v = current_v.next
 
     def insert_after(self, index, value):
         self.index = index
