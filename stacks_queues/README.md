@@ -2,13 +2,23 @@
 Stack: First In Last Out.
 Queue: First In First Out.
 
-## Challenge:
+## Challenge1:
 Implement both stack and a queue using Node based data structure.
 
-## Approach & Efficiency:
+## Challenge2: 
+Create a psuedo queue without using an existing queue instead use two stacks to implement it.
+
+## Whiteboard:
+![psuedo](Untitled%20(3).jpg)
+
+
+## Approach & Efficiency1:
 Time Complexity: Big O(1)
 Space Complexity: Big O(1)
 
+## Approach & Efficiency1:
+Time Complexity: Big O(N)
+Space Complexity: Big O(N)
 
 ## API:
 #### Stack:
