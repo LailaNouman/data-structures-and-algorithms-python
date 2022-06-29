@@ -24,7 +24,7 @@ class LinkedList:
         #     current_v.next = node
         newNode = Node(value)
         current_v = self.head
-        while True:
+        while current_v:
             if current_v.next == None:
                 current_v.next = newNode
                 break

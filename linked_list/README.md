@@ -19,13 +19,8 @@ and returns the value of this index from the tail.
 
 ## Whiteboard
 
-**Append**
-![append](Untitled%20(2).jpg)
-
 **Kth_from_end**
 ![kth](kth.jpg)
-
-
 
 
 ## Approach & Efficiency
@@ -39,11 +34,9 @@ Time complexity:
 - insert after: Big O(N)
 - kth from end: Big O(N)
 
-I created two classes first class called Node and the second class called LinkedList the Node class creates 
-a node that points to null. The LinkedList class has 6 methods each one of them doing a different thing to
-the list so the insert method inserts a value inside the list, the append method adds a value to the end of
 the list, the insert after method inserts a value after a specific element, the kth from end method which returns
 the node value from the tail of the linked-list.
+
 
 ## API
 
@@ -52,5 +45,4 @@ the node value from the tail of the linked-list.
 - Tostring: To print the list in a formatted way.
 - Append: add to the last.
 - Insert_before: to add an element before a specific element.
-- Insert_after: to add an element after a specific element.
-- Kth: to find the value of the number you gave the method but from the tail.
+

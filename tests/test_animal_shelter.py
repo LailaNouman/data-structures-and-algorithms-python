@@ -1,5 +1,5 @@
 import pytest
-from animal-shelter.stack_queue_animal_shelter import AnimalShelter
+from animal_shelter.stack_queue_animal_shelter import AnimalShelter
 
 q = AnimalShelter()
 q.enqueue("sherry", "cat")
