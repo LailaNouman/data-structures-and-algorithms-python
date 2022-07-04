@@ -50,6 +50,20 @@ class BinaryTree:
         _walk(self.root)
         return result
 
+    def max_tree(self):
+        self.max = self.root.value
+
+        def _walk(root):
+            if root.value > self.max:
+                self.max = root.value
+            if root.left:
+                _walk(root.left)
+            if root.right:
+                _walk(root.right)
+
+        _walk(self.root)
+        return self.max
+
 class BinarySearchTree(BinaryTree):
 
     def add(self, value):
@@ -91,18 +105,19 @@ class BinarySearchTree(BinaryTree):
 
 if __name__ == "__main__":
     tree = BinaryTree()
-    tree.root = Node("A")
-    tree.root.left = Node("B")
-    tree.root.right = Node("C")
-    tree.root.left.left = Node("D")
-    tree.root.left.right = Node("E")
+    tree.root = Node(1)
+    tree.root.left = Node(3)
+    tree.root.right = Node(4)
+    tree.root.left.left = Node(6)
+    tree.root.left.right = Node(3)
     print(tree.pre_order())
-    print(tree.in_order())
-    print(tree.post_order())
-    bTree = BinarySearchTree()
-    bTree.add(1)
-    bTree.add(2)
-    bTree.add(3)
-    bTree.add(4)
-    print(bTree.pre_order())
-    print(bTree.contains(4))
+    # print(tree.in_order())
+    # print(tree.post_order())
+    print(tree.max_tree())
+    # bTree = BinarySearchTree()
+    # bTree.add(1)
+    # bTree.add(2)
+    # bTree.add(3)
+    # bTree.add(4)
+    # print(bTree.pre_order())
+    # print(bTree.contains(4))
