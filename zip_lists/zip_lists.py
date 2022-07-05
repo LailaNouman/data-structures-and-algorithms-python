@@ -1,4 +1,4 @@
-from linked_list.linkedlist import ( LinkedList )
+from linked_list.linkedlist import LinkedList
 
 def zip_lists(list1, list2):
     current_v1 = list1.head
@@ -15,6 +15,8 @@ def zip_lists(list1, list2):
             current_v2 = current_v2.next
 
     return list3
+
+
 
 if __name__ == '__main__':
     ll1 = LinkedList()
