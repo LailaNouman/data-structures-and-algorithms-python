@@ -6,9 +6,9 @@ Write a function called breadth first that takes a tree as an argument and retur
 
 ## Approach & Efficiency
 Time complexity: Big O(n)
-Space complexity: Big O(w), where w is the largest width of the tree
+Space complexity: Big O(n)
 
 ### Solution
-![breadth1](breadth.png)
+![breadth1](brrr.png)
 
 

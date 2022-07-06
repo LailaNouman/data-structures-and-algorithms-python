@@ -41,20 +41,20 @@ class Tree:
     def __init__(self):
         self.root = None
 
-    def breadth_first(self):
-        if not self.root:
-            return self.root
-        result = []
-        queue = Queue()
-        queue.enqueue(self.root)
-        while not queue.is_empty():
-            front = queue.dequeue()
-            result.append(front.value)
-            if front.left:
-                queue.enqueue(front.left)
-            if front.right:
-                queue.enqueue(front.right)
-        return result
+def breadth_first(tree):
+    if not tree.root:
+        return tree.root
+    result = []
+    queue = Queue()
+    queue.enqueue(tree.root)
+    while not queue.is_empty():
+        front = queue.dequeue()
+        result.append(front.value)
+        if front.left:
+            queue.enqueue(front.left)
+        if front.right:
+            queue.enqueue(front.right)
+    return result
 
 if __name__ == "__main__":
   tree = Tree()
@@ -64,4 +64,4 @@ if __name__ == "__main__":
   tree.root.left.left = TNode(2)
   tree.root.left.right = TNode(6)
   tree.root.right.left = TNode(9)
-  print(tree.breadth_first())
+  print(breadth_first(tree))
