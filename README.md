@@ -8,3 +8,5 @@
 | Zip lists | [zip_lists](./zip_lists)           |
 | Stack and queues | [stacks_queues](./stacks_queues)   |
 | Animal shelter using queue | [animal-shelter](./animal_shelter)   |
+|Hashmap left join| [hashmap_left_join](./hashmap_left_join)   |
+
