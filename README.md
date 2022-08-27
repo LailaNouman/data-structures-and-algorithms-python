@@ -11,5 +11,6 @@
 |Hashmap left join| [hashmap_left_join](./hashmap_left_join)   |
 |Graph| [graph](./graph)   |
 |Breadth first graph| [graph_breadth_first](./graph_breadth_first)   |
+|Graph business trip| [graph_business_trip](./graph_business_trip)   |
 
 
