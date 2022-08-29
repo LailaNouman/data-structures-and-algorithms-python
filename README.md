@@ -12,5 +12,6 @@
 |Graph| [graph](./graph)   |
 |Breadth first graph| [graph_breadth_first](./graph_breadth_first)   |
 |Graph business trip| [graph_business_trip](./graph_business_trip)   |
+|Graph depth first| [graph_depth_first](./graph_depth_first)   |
 
 
